@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Answer: Adaptive websites have multiple pre-made websites for different devices, such as a mobile and a desktop. Usually they use pixel measurements. When the user comes to the website, they will receive the version that matches with their device. Responsive websites will respond to thousands of device sizes, seamlessly transitioning without the knowledge of the user. Responsive units are used throughout the site.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Answer: A mobile first website is built and designed with the mobile user in mind first. When the mobile design is complete then the developer will move on to the next larger size until the website is finished. Mobile first also uses media queries of "Min-Width". A desktop first website does just the opposite, and uses media queries of "Max-Width".
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+Answer: Most websites have a default font size of 16px. When you set the font-size in the html tag to 62.5%, it makes it technically become 10px while keeping it's scalability because of using percents. When using REM units you can more easily keep track of the approximate pixel sizes because the rem's will be multiples of 10. Multiples of 10 are easier to calculate then multiples of 12 or 8.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Answer: Pre-processing is a way for developers to simplify, organize and streamline development speed for large amounts of CSS. It lets you nest CSS like you would nest HTML so you can keep track of parent and child selectors. You can use variables and mix-ins to keep your CSS as dry as possible. Plus it just makes CSS more enjoyable.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+Answer: My favorite concepts are nesting and being able to split up your LESS files. Nesting just makes keeping track of all your styles so much easier, you can see in one place which parent element styles are affecting the current style and vice-versa. I also like the feature of splitting up your LESS files so that each one contains different components or categories of styles. Something that gives me the most trouble would probably be using operations in LESS. I haven't seen a place to use math in my LESS styles, but I am sure it can be helpful.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -56,13 +66,13 @@ Follow these steps to set up your project:
 - [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
 - [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
 - [ ] Push commits: git push origin `<firstName-lastName>`.
- 
+
 Follow these steps for completing your project.
 
 - [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
 - [ ] Add your project manager as a reviewer on the pull-request
 - [ ] Your project manager will count the project as complete by merging the branch back into master.
- 
+
 
 ### Preprocessor Set up
 
@@ -90,7 +100,7 @@ Your finished project must include all of the following requirements:
 7.home-page.less
 ```
 
-_You will know everything is working properly when you see the styles enabled for the provided content._  
+_You will know everything is working properly when you see the styles enabled for the provided content._
 
 ### Home Page - Desktop HTML & LESS
 

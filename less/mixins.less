@@ -1,1 +1,32 @@
 // Mixins Here
+
+.flex(@direction: row; @wrap: no-wrap){
+    display: flex;
+    flex-direction: @direction;
+    flex-wrap: @wrap;
+}
+
+.button(@width; @padding;@font-size; @color; @background){
+    width: @width;
+    padding: @padding;
+    font-size: @font-size;
+    color: @color;
+    background: @background;
+}
+
+.btn-hover(){
+    transition: background 400ms, color 400ms;
+    &:hover {
+        background: @porcelain;
+        color: @btn-bg-color;
+    }
+}
+
+.nav-hover(){
+    transition: background 400ms, color 400ms, border-radius 400ms;
+    &:hover {
+        background: @btn-bg-color;
+        color: @porcelain;
+        border-radius: 5px;
+    }
+}

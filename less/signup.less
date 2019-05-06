@@ -1,0 +1,46 @@
+// Sign In to Account Page
+.signup {
+    margin-top: 100px;
+    height: 100%;
+}
+
+
+section.login {
+    height: 100%;
+    .flex();
+    align-items: center;
+    div.signin-img {
+        width: 50%;
+        img{
+            width: 100%;
+        }
+    }
+    div.form {
+        padding: 5%;
+        width: 50%;
+        height: 100%;
+        h1 {
+            font-size: 3rem;
+            margin: 5px;
+        }
+        form {
+            .flex(column);
+            input {
+                width: 80%;
+                max-width: 150px;
+                border-radius: 2px;
+                margin: 5px;
+                padding: 2px;
+            }
+            button {
+                width: 50%;
+                .button(125px, 8px, 1.5em, @porcelain, @btn-bg-color);
+                border-radius: 5px;
+                border: 1px solid @ebony-clay;
+                margin: 5px;
+                .btn-hover();
+            }
+
+        }
+    }
+}
